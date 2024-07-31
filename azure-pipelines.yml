@@ -1,5 +1,5 @@
 trigger:
-- none
+- release1.0
 stages:
 - stage: BuildStage
   jobs:
