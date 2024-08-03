@@ -5,8 +5,15 @@ variables:
   ProjectName: '**/*.csproj'
   BuildConfiguration: 'Release'
 pool:
-  vmImage: ubuntu-latest
+  vmImage:  "windows-latest"
 steps:
+- task: SonarCloudPrepare@2
+  inputs:
+    SonarCloud: 'sonar cloud connection'
+    organization: 'devopsazure222'
+    scannerMode: 'MSBuild'
+    projectKey: 'devopsazure222_HelloWorldApp'
+    projectName: 'devopsazure222'
 - task: DotNetCoreCLI@2
   displayName: 'Restore Project'
   inputs:
@@ -26,3 +33,13 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration)'
     publishTestResults: true
     projects: '**/*Tests.csproj'
+
+- task: SonarCloudAnalyze@2
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
+
+- task: SonarCloudPublish@2
+  inputs:
+    pollingTimeoutSec: '300'
+
+
