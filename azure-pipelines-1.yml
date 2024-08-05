@@ -29,6 +29,7 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
 
 - stage: DevStage
+  dependsOn: "BuildStage"
   jobs:
   - job: DevJob
     pool:
