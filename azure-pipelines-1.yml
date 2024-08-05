@@ -23,7 +23,7 @@ stages:
       inputs:
         command: 'publish'
         publishWebProjects: true
-        arguments: '-c $(BuildConfiguration) -o $(Build.ArtifactStagingDirectory)'
+        arguments: '-c $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
