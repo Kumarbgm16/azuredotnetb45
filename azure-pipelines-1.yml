@@ -48,6 +48,6 @@ stages:
       inputs:
         ConnectionType: 'AzureRM'
         azureSubscription: 'svc'
-        appType: 'webAppLinux'
-        WebAppName: 'azurewebdev'
+        appType: 'webApp'
+        WebAppName: 'dev1'
         packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
