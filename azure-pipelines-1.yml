@@ -40,3 +40,10 @@ stages:
       inputs:
         buildType: current
         artifact: 'drop'
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'svc'
+        appType: 'webAppLinux'
+        WebAppName: 'azurewebdev'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
