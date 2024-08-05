@@ -43,7 +43,7 @@ stages:
         buildType: 'specific'
         buildVersionToDownload: 'latest'
         artifactName: 'drop'
-        targetPath: '$(System.ArtifactDirectory)'
+        targetPath: '$(System.ArtifactsDirectory)'
         
     - task: AzureRmWebAppDeployment@4
       inputs:
