@@ -40,8 +40,7 @@ stages:
     steps:
     - task: DownloadPipelineArtifact@2
       inputs:
-        buildType: 'specific'
-        buildVersionToDownload: 'latest'
+        buildType: 'current'
         artifactName: 'drop'
         targetPath: '$(System.ArtifactsDirectory)'
         
