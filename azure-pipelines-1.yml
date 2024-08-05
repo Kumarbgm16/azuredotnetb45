@@ -24,12 +24,12 @@ stages:
         command: 'publish'
         publishWebProjects: true
         arguments: '-c $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    - task: PublishBuildArtifacts@1
+    - task: PublishPipelineArtifact@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
-        artifact: 's'
-        publishLocation: 'Container'
+        targetPath: '$(Build.ArtifactStagingDirectory)'
+        artifact: 'drop'
+        publishLocation: 'pipeline'
+    
 
 - stage: DevStage
   dependsOn: "BuildStage"
@@ -38,12 +38,12 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: DownloadBuildArtifacts@1
+    - task: DownloadPipelineArtifact@2
       inputs:
-        buildType: 'current'
-        downloadType: 'single'
+        buildType: 'specific'
+        buildVersionToDownload: 'latest'
         artifactName: 'drop'
-        downloadPath: '$(System.ArtifactsDirectory)'
+        targetPath: '$(System.ArtifactDirectory)'
         
     - task: AzureRmWebAppDeployment@4
       inputs:
