@@ -43,11 +43,11 @@ stages:
         buildType: 'current'
         artifactName: 'drop'
         targetPath: '$(System.ArtifactsDirectory)'
-        
+       
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'svc'
-        appType: 'webApp'
-        WebAppName: 'dev1'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        azureSubscription: 'svc1'
+        appType: 'webAppLinux'
+        WebAppName: 'dssdev'
+        packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
