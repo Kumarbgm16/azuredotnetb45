@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj": {}
+    "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj": {
+    "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
+        "projectUniqueName": "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
         "projectName": "HelloWorldApp.Web",
-        "projectPath": "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
+        "projectPath": "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
         "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\obj\\",
+        "outputPath": "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

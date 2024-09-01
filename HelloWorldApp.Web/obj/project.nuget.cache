@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YEwN7mnM7SR1meaQSGo7QCZ1fuXZDHkSwEVantfeXl2O+5FonKi4D2/PqCMcSClN87KY+zMkAucDgHVQkVmepA==",
+  "dgSpecHash": "VxkUnCJO3C7anTvMcqZtWYcgDCLJ6TiC0Qdy+tJVD2Ex4imnCs0VuRav/UrMqMuknfh/O/RodXYQsw4sCANWRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kiran\\azure\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
+  "projectFilePath": "C:\\Users\\kiran\\dotnetproj\\HelloWorldApp\\HelloWorldApp.Web\\HelloWorldApp.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
