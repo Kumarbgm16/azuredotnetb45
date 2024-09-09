@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: helloworldapp
+ labels:
+ app: helloworldapp
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+ app: helloworldapp
+ template:
+ metadata:
+ labels:
+ app: helloworldapp
+ spec:
+ containers:
+ - name: helloworldapp
+ image: dssregistry.azurecr.io/helloworldapp #This is overridden by pipeline and should not have tag namei
+ imagePullPolicy: Always
+ ports:
+ - containerPort: 80
